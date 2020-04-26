@@ -22,7 +22,7 @@ print("The row of y_test {0} and column of y_test 1 ".format(y_test.shape[0]))
 #importing numpy,keras,keras-sequential,dense layer and activation function
 import numpy as np
 import keras
-from keras.models import Sequential()
+from keras.models import Sequential
 from keras.layers import Dense,Activation
 
 # Set the validation Data 
@@ -34,3 +34,10 @@ model = Sequential()
 model.add(Dense(13,input_dim = 13,kernel_initializer='normal',activation='relu'))
 model.add(Dense(6,kernel_initializer='normal',activation='relu'))
 model.add(Dense(1,kernel_initializer='normal',activation='relu'))
+
+
+# Compile Model 
+model.compile(loss='mean_squared_error',optimizer='adam',metrics=['mean_absolute_percentage_error'])
+
+# Train  the Model 
+model.fit(x_train,y_train,batch_size=32,epochs=3,validation_data=(x_val,y_val))
