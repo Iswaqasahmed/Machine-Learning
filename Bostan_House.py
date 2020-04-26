@@ -28,3 +28,9 @@ from keras.layers import Dense,Activation
 # Set the validation Data 
 x_val = x_train[300:,]
 y_val = y_train[300:,]
+
+# Define Model Architecture
+model = Sequential()
+model.add(Dense(13,input_dim = 13,kernel_initializer='normal',activation='relu'))
+model.add(Dense(6,kernel_initializer='normal',activation='relu'))
+model.add(Dense(1,kernel_initializer='normal',activation='relu'))
