@@ -18,3 +18,13 @@ print("The row of x_train {0} and column of x_train {1} ".format(x_train.shape[0
 print("The row of y_train {0} and column of y_train 1 ".format(y_train.shape[0]))
 print("The row of x_test {0} and column of x_test {1} ".format(x_test.shape[0],x_test.shape[1]))
 print("The row of y_test {0} and column of y_test 1 ".format(y_test.shape[0]))
+
+#importing numpy,keras,keras-sequential,dense layer and activation function
+import numpy as np
+import keras
+from keras.models import Sequential()
+from keras.layers import Dense,Activation
+
+# Set the validation Data 
+x_val = x_train[300:,]
+y_val = y_train[300:,]
