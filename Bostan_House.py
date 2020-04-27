@@ -40,4 +40,30 @@ model.add(Dense(1,kernel_initializer='normal',activation='relu'))
 model.compile(loss='mean_squared_error',optimizer='adam',metrics=['mean_absolute_percentage_error'])
 
 # Train  the Model 
-model.fit(x_train,y_train,batch_size=32,epochs=3,validation_data=(x_val,y_val))
+history = model.fit(x_train,y_train,batch_size=32,epochs=3,validation_data=(x_val,y_val))
+print(model.summary())
+
+# Model Evaluate
+results = model.evaluate(x_test, y_test)
+print(results)
+for i in range(len(model.metrics_names)):
+    print(model.metrics_names[i]," : ", results[i])
+history_dict = history.history
+print(history_dict.keys())
+# importing matplotlib 
+import matplotlib.pyplot as plt
+# created history to stored the loss values 
+history_dict = history.history
+# created loss_values variable for validation of mean absolute percentage error
+loss_values = history_dict['mean_absolute_percentage_error']
+# created loss vaues variable to get val loss values from history dictonary
+val_loss_values = history_dict['val_loss']
+# 
+epochs = range(1, len(loss_values) + 1)
+plt.plot(epochs, loss_values, 'bo', label='Training loss')
+plt.plot(epochs, val_loss_values, 'b', label='Validation loss')
+plt.title('Training and validation loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()
