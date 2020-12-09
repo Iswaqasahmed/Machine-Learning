@@ -1,10 +1,10 @@
 ## Machine Learning:
-[Regression](#1)
+[Regression][1]
 
 
 
 
-[Bostan House Prediction:](#1)
+[1]: Bostan House Prediction:
 Let’s select a popular Keras dataset for developing
 a model[Bostan house price dataset]. 
 
