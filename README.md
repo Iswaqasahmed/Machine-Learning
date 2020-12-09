@@ -4,7 +4,7 @@
 
 
 
-(#A): Bostan House Prediction:
+<a id='#A'></a>: Bostan House Prediction:
 Let’s select a popular Keras dataset for developing
 a model[Bostan house price dataset]. 
 
