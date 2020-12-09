@@ -14,7 +14,7 @@ not If not aviliable, you can downlaod.
 The data is present in an Amazon S2 bucket, which we can
 download by using simple Keras commands provided exclusively for the
 datasets.
-[Regression](#d)
+
 
 **step-2**
 Nature of input[size of row and column] and as well as label
@@ -47,3 +47,4 @@ by increased the size of each epoch the over come the overfitting.
 **Our model is trained for bostan like House prediction but it not suitable if you prediction
 another house of distanct feature of bostan**
 
+[Regression](#d)
