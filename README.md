@@ -4,13 +4,13 @@
 
 
 
-<a id='#A'></a>: Bostan House Prediction:
+: Bostan House Prediction:
 Let’s select a popular Keras dataset for developing
 a model[Bostan house price dataset]. 
 
 **step-1**
 Download the bostan house datasets athough it comes with keras by deafult might be latest version.
-If not aviliable, you can downlaod.
+<a id='#A'>not</a>If not aviliable, you can downlaod.
 The data is present in an Amazon S2 bucket, which we can
 download by using simple Keras commands provided exclusively for the
 datasets.
