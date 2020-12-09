@@ -10,10 +10,11 @@ a model[Bostan house price dataset].
 
 **step-1**
 Download the bostan house datasets athough it comes with keras by deafult might be latest version.
-<a id='#A'>not</a>If not aviliable, you can downlaod.
+not If not aviliable, you can downlaod.
 The data is present in an Amazon S2 bucket, which we can
 download by using simple Keras commands provided exclusively for the
 datasets.
+[Regression](#d)
 
 **step-2**
 Nature of input[size of row and column] and as well as label
