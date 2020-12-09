@@ -4,7 +4,7 @@
 
 
 
-[#1](Bostan House Prediction:)
+[Bostan House Prediction:](#1)
 Let’s select a popular Keras dataset for developing
 a model[Bostan house price dataset]. 
 
