@@ -1,5 +1,7 @@
-### Regression:
-Linear Regression: If one dependent variable (y) depend on independent variable (x) is know as Regression. \
+### Linear Regression
+
+
+If one dependent variable (y) depend on independent variable (x) is know as Regression. \
 Type of Linear Regression.  
 There are two types of linear regression.           
 1. Linear Regression with one Variable. [x].                   
